@@ -1,13 +1,18 @@
 package com.sxtsoft.cajondesastre.projectmodel;
 
+import java.util.Date;
+
 public class Gasto {
 	
 	private Long codigo;
-	private Categoria categoria;
 	private double importe;
 	private Usuario usuario;
+	private TipoGasto tipoGasto;
+	private Date fecha;
+	private String detalle;
 	private long longitud;
 	private long latitud;
+	private Caracteristica caracteristica;
 	
 	public Gasto() {
 		
@@ -19,14 +24,6 @@ public class Gasto {
 
 	public void setCodigo(Long codigo) {
 		this.codigo = codigo;
-	}
-
-	public Categoria getCategoria() {
-		return categoria;
-	}
-
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
 	}
 
 	public double getImporte() {
@@ -45,6 +42,14 @@ public class Gasto {
 		this.usuario = usuario;
 	}
 
+	public TipoGasto getTipoGasto() {
+		return tipoGasto;
+	}
+
+	public void setTipoGasto(TipoGasto tipoGasto) {
+		this.tipoGasto = tipoGasto;
+	}
+
 	public long getLongitud() {
 		return longitud;
 	}
@@ -61,11 +66,21 @@ public class Gasto {
 		this.latitud = latitud;
 	}
 
+	public Caracteristica getCaracteristica() {
+		return caracteristica;
+	}
+
+	public void setCaracteristica(Caracteristica caracteristica) {
+		this.caracteristica = caracteristica;
+	}
+
 	@Override
 	public String toString() {
-		return "Gasto [codigo=" + codigo + ", categoria=" + categoria + ", importe=" + importe + ", usuario=" + usuario
-				+ ", longitud=" + longitud + ", latitud=" + latitud + "]";
+		return "Gasto [codigo=" + codigo + ", importe=" + importe + ", usuario=" + usuario + ", tipoGasto=" + tipoGasto
+				+ ", longitud=" + longitud + ", latitud=" + latitud + ", caracteristica=" + caracteristica + "]";
 	}
+
+
 	
 	
 	

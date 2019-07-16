@@ -6,8 +6,6 @@ public class TipoGasto {
 
 	private Long codigo;
 	private String nombre;
-	private Date fecha;
-	private String detalle;
 	private Categoria categoria;
 	
 	public TipoGasto () {
