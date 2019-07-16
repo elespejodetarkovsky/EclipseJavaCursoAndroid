@@ -2,13 +2,13 @@ package com.sxtsoft.cajondesastre.projectmodel;
 
 import java.util.Date;
 
-public class TipoGasto extends Gasto{
+public class TipoGasto {
 
 	private Long codigo;
 	private String nombre;
 	private Date fecha;
 	private String detalle;
-	private Caracteristica caracteristica;
+	private Categoria categoria;
 	
 	public TipoGasto () {
 		
@@ -46,22 +46,20 @@ public class TipoGasto extends Gasto{
 		this.detalle = detalle;
 	}
 
-	public Caracteristica getCaracteristica() {
-		return caracteristica;
+	public Categoria getCategoria() {
+		return categoria;
 	}
 
-	public void setCaracteristica(Caracteristica caracteristica) {
-		this.caracteristica = caracteristica;
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 
 	@Override
 	public String toString() {
 		return "TipoGasto [codigo=" + codigo + ", nombre=" + nombre + ", fecha=" + fecha + ", detalle=" + detalle
-				+ ", caracteristica=" + caracteristica + "]";
+				+ ", categoria=" + categoria + "]";
 	}
 
-
-	
 	
 	
 }
