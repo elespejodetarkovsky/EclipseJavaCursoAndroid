@@ -18,6 +18,22 @@ public class Gasto {
 		
 	}
 
+	public Date getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+
+	public String getDetalle() {
+		return detalle;
+	}
+
+	public void setDetalle(String detalle) {
+		this.detalle = detalle;
+	}
+
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -77,11 +93,8 @@ public class Gasto {
 	@Override
 	public String toString() {
 		return "Gasto [codigo=" + codigo + ", importe=" + importe + ", usuario=" + usuario + ", tipoGasto=" + tipoGasto
-				+ ", longitud=" + longitud + ", latitud=" + latitud + ", caracteristica=" + caracteristica + "]";
+				+ ", fecha=" + fecha + ", detalle=" + detalle + ", longitud=" + longitud + ", latitud=" + latitud
+				+ ", caracteristica=" + caracteristica + "]";
 	}
-
-
-	
-	
 	
 }

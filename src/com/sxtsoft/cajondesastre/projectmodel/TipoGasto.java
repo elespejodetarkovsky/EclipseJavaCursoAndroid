@@ -28,21 +28,6 @@ public class TipoGasto {
 		this.nombre = nombre;
 	}
 
-	public Date getFecha() {
-		return fecha;
-	}
-
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
-	}
-
-	public String getDetalle() {
-		return detalle;
-	}
-
-	public void setDetalle(String detalle) {
-		this.detalle = detalle;
-	}
 
 	public Categoria getCategoria() {
 		return categoria;
@@ -54,9 +39,10 @@ public class TipoGasto {
 
 	@Override
 	public String toString() {
-		return "TipoGasto [codigo=" + codigo + ", nombre=" + nombre + ", fecha=" + fecha + ", detalle=" + detalle
-				+ ", categoria=" + categoria + "]";
+		return "TipoGasto [codigo=" + codigo + ", nombre=" + nombre + ", categoria=" + categoria + "]";
 	}
+
+
 
 	
 	
