@@ -7,6 +7,7 @@ public class TipoGasto {
 	private Long codigo;
 	private String nombre;
 	private Categoria categoria;
+	private String icono;
 	
 	public TipoGasto () {
 		
@@ -36,10 +37,19 @@ public class TipoGasto {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+	
+	public String getIcono() {
+		return icono;
+	}
+	
+	public void setIcono(String icono) {
+		this.icono = icono;
+	}
+	
 
 	@Override
 	public String toString() {
-		return "TipoGasto [codigo=" + codigo + ", nombre=" + nombre + ", categoria=" + categoria + "]";
+		return "TipoGasto [codigo=" + codigo + ", nombre=" + nombre + ", categoria=" + categoria + "icono=" + icono + "]";
 	}
 
 

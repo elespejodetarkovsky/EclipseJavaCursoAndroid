@@ -1,6 +1,6 @@
 package com.sxtsoft.cajondesastre.projectmodel.medicamentos;
 
-public class medicamento {
+public class Medicamento {
 
 	private Long codigo;
 	private String nombre;

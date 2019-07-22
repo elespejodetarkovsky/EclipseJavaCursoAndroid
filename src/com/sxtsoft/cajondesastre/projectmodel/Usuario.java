@@ -6,6 +6,8 @@ public class Usuario {
 	private String nombre;
 	private String apellido;
 	private String apodo;
+	private Gender genero;
+	private String password;
 	
 	public Usuario() {
 		
@@ -41,6 +43,23 @@ public class Usuario {
 
 	public void setApodo(String apodo) {
 		this.apodo = apodo;
+	}
+
+	
+	public Gender getGenero() {
+		return genero;
+	}
+
+	public void setGenero(Gender genero) {
+		this.genero = genero;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	@Override

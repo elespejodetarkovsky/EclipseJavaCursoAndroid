@@ -4,7 +4,7 @@
   <enumeration id="1" language="java" name="com.sxtsoft.cajondesastre.projectmodel.Caracteristica" 
     project="cajon desastre" file="/cajon desastre/src/com/sxtsoft/cajondesastre/projectmodel/Caracteristica.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="933" y="440"/>    
+    <position height="-1" width="-1" x="659" y="123"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -23,7 +23,7 @@
   </enumeration>  
   <class id="3" language="java" name="com.sxtsoft.cajondesastre.projectmodel.Gasto" project="cajon desastre" 
     file="/cajon desastre/src/com/sxtsoft/cajondesastre/projectmodel/Gasto.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="685" y="249"/>    
+    <position height="-1" width="-1" x="407" y="336"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -33,7 +33,7 @@
   <class id="4" language="java" name="com.sxtsoft.cajondesastre.projectmodel.TipoGasto" project="cajon desastre" 
     file="/cajon desastre/src/com/sxtsoft/cajondesastre/projectmodel/TipoGasto.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="392" y="266"/>    
+    <position height="-1" width="-1" x="121" y="356"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -42,53 +42,101 @@
   </class>  
   <class id="5" language="java" name="com.sxtsoft.cajondesastre.projectmodel.Usuario" project="cajon desastre" 
     file="/cajon desastre/src/com/sxtsoft/cajondesastre/projectmodel/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="955" y="169"/>    
+    <position height="-1" width="-1" x="639" y="464"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="6">    
+  <class id="6" language="java" name="com.sxtsoft.cajondesastre.projectmodel.Grupo" project="cajon desastre" 
+    file="/cajon desastre/src/com/sxtsoft/cajondesastre/projectmodel/Grupo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="861" y="421"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="7" language="java" name="com.sxtsoft.cajondesastre.projectmodel.Gender" project="cajon desastre" 
+    file="/cajon desastre/src/com/sxtsoft/cajondesastre/projectmodel/Gender.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="863" y="111"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <association id="8">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="9" name="tipoGasto">        
+        <position height="0" width="0" x="-271" y="90"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-271" y="90"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="11">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="12" name="genero">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="14">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="7" name="categoria">        
+      <attribute id="15" name="categoria">        
         <position height="18" width="53" x="212" y="146"/>      
       </attribute>      
-      <multiplicity id="8" minimum="0" maximum="1">        
+      <multiplicity id="16" minimum="0" maximum="1">        
         <position height="16" width="23" x="209" y="182"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="9">    
+  <association id="17">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="10" name="tipoGasto"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
+      <attribute id="18" name="caracteristica">        
+        <position height="18" width="74" x="562" y="207"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-274" y="-317"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="12">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="13" name="usuario">        
-        <position height="18" width="44" x="811" y="183"/>      
+  <association id="20">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="21" name="usuarios">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="14" minimum="0" maximum="1">        
-        <position height="16" width="23" x="833" y="210"/>      
+      <multiplicity id="22" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="15">    
+  <association id="23">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="16" name="caracteristica">        
-        <position height="18" width="74" x="772" y="374"/>      
+      <attribute id="24" name="usuario">        
+        <position height="18" width="44" x="509" y="365"/>      
       </attribute>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+      <multiplicity id="25" minimum="0" maximum="1">        
+        <position height="16" width="23" x="518" y="421"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
+    <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

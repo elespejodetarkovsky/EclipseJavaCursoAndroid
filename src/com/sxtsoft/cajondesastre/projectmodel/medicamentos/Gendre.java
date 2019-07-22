@@ -1,5 +1,5 @@
 package com.sxtsoft.cajondesastre.projectmodel.medicamentos;
 
-public class paciente {
-
+public enum Gendre {
+	MASCULINO, FEMENINO;
 }
